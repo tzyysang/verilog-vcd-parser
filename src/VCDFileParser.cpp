@@ -22,7 +22,9 @@ VCDFileParser::~VCDFileParser()
 
 VCDFile *VCDFileParser::parse_file(const std::string &filepath)
 {
-
+	
+	std::cout << "VCDFileParser: parsing " << filepath << std::endl;
+	
     this->filepath = filepath;
 
     scan_begin();
